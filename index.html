@@ -53,7 +53,6 @@
           <p><strong>Problem:</strong> Evaluate how well an LLM can interpret satellite imagery for land-cover estimation, spatial reasoning, and urban report generation compared to DeepLabV3+ segmentation, and test its reliability under image degradation.</p>
           <p><strong>What I did:</strong> Compared zero-shot, few-shot, and chain-of-thought prompting against DeepLabV3+ pixel statistics; analyzed 3x3 tile grids for spatial context (urban vs. fringe); ran a hallucination test on blurred, inverted, grayscale, and pixelated images; generated an LLM-written urban analysis report; compared LLM vs. DeepLabV3+ building density maps.</p>
           <p><strong>What I found:</strong> Few-shot prompting had the lowest MAE; all strategies underestimated roads/buildings and overestimated vegetation; heavy blur caused the largest shift in LLM output and the model never acknowledged degraded image quality; the urban report mixed verifiable claims (e.g., building concentration, major transportation surfaces) with generic, unverifiable land-use claims; LLM building density errors clustered more in mixed suburban neighborhoods rather than purely random locations [1].</p>
-          <p><strong>What I'd do differently:</strong> [ADD]</p>
         </div>
       </div>
 
@@ -65,7 +64,8 @@
           <p><strong>Problem:</strong> Model how ongoing Kīlauea volcanic activity (SO2 emissions, lava flow) affects surrounding vegetation over time, and whether vegetation recovers afterward.</p>
           <p><strong>What I did:</strong> Built a causal loop diagram and stock-and-flow model with parameters: lava flow 1–3 billion gallons, SO2 released 500–14,000 metric tons (dependent on lava flow), starting vegetation 150,000 acres, starting nutrients 75 PPM, rainfall 70–100 inches, and natural vegetation death of 5–10% of available vegetation [2].</p>
           <p><strong>What I found:</strong> SO2 has an acidic effect that damages/kills plants; lava flow initially burns and destroys vegetation in its path; vegetation grows back stronger afterward due to nutrients from the lava flow combined with adequate rainfall [2].</p>
-          <p><strong>What I'd do differently:</strong> [ADD]</p>
+         <img src="GEOG476/causal loop.png" width="400">
+         <img src="GEOG476/causal loop.png" width="400">
           <div id="map-kilauea" class="map"></div>
         </div>
       </div>
