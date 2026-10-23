@@ -38,7 +38,7 @@
 
   <section id="about">
     <h2>About</h2>
-    <p>Texas A&M Senior to graduate December 2026</p>
+    <p>Texas A&M Senior to graduate December 2026 looking for a GIS Analyst job. Is skilled with ArcGIS Online, ArcGIS Pro, and Python.</p>
   </section>
 
   <section id="projects">
@@ -50,12 +50,14 @@
         <h3>LLM for Remote Sensing Image Analysis</h3>
         <p>GEOG 475 Lab 3</p>
         <div class="details" id="p1">
-          <p><strong>Problem:</strong> Evaluate how well an LLM can interpret satellite imagery for land-cover estimation, spatial reasoning, and urban report generation compared to DeepLabV3+ segmentation, and test its reliability under image degradation.</p>
+          <p><strong>Problem:</strong> Evaluate how well an LLM can interpret satellite imagery for land-cover estimation, spatial reasoning, and urban report generation compared to DeepLabV3+ segmentation, and test its reliability under image degradation. </p>
+          <p><strong>Programs Used: </strong>ArcGIS Pro</p>
           <p><strong>What I did:</strong> Compared zero-shot, few-shot, and chain-of-thought prompting against DeepLabV3+ pixel statistics; analyzed 3x3 tile grids for spatial context (urban vs. fringe); ran a hallucination test on blurred, inverted, grayscale, and pixelated images; generated an LLM-written urban analysis report; compared LLM vs. DeepLabV3+ building density maps.</p>
+          <p><strong>Why I used the tools: </strong>Using the hexagonal maps helped visualize the spatial distribution for the satellite imagery. It helps reveal clustering patters and spatial relationships that would be hard to see based on raw predictions. It helps make accurate spatial density estimations.</p>
           <p><strong>What I found:</strong> Few-shot prompting had the lowest MAE; all strategies underestimated roads/buildings and overestimated vegetation; heavy blur caused the largest shift in LLM output and the model never acknowledged degraded image quality; the urban report mixed verifiable claims (e.g., building concentration, major transportation surfaces) with generic, unverifiable land-use claims; LLM building density errors clustered more in mixed suburban neighborhoods rather than purely random locations [1].</p>
-        <img src="C:/Users/chanm/OneDrive - Texas A&M University/geog475/lab3/screen1.png" width="400">
-        <img src="C:/Users/chanm/OneDrive - Texas A&M University/geog475/lab3/screen2.png" width="400">  
-        <img src="C:/Users/chanm/OneDrive - Texas A&M University/geog475/lab3/screen3.png" width="400">
+        <img src="C:/Users/chanm/OneDrive - Texas A&M University/geog475/lab3/screen1.png" width="600">
+        <img src="C:/Users/chanm/OneDrive - Texas A&M University/geog475/lab3/screen2.png" width="600">  
+        <img src="C:/Users/chanm/OneDrive - Texas A&M University/geog475/lab3/screen3.png" width="600">
       </div>
       </div>
 
@@ -65,10 +67,12 @@
         <p>GEOG 467 System Dynamics Model</p>
         <div class="details" id="p2">
           <p><strong>Problem:</strong> Model how ongoing Kīlauea volcanic activity (SO2 emissions, lava flow) affects surrounding vegetation over time, and whether vegetation recovers afterward.</p>
+          <p><strong>Programs Used: </strong>Vensim PLE</p>
           <p><strong>What I did:</strong> Built a causal loop diagram and stock-and-flow model with parameters: lava flow 1–3 billion gallons, SO2 released 500–14,000 metric tons (dependent on lava flow), starting vegetation 150,000 acres, starting nutrients 75 PPM, rainfall 70–100 inches, and natural vegetation death of 5–10% of available vegetation [2].</p>
+          <p><strong>Why I used the tools: </strong>Using these diagrams help visualize how the different variables interact with the system. For the Causal Loops, it provides an understanding to both the immediate and long-term effects. The Stock-and-Flow diagram allows the simulation and estimation of the size of each component over time. It gives insight into the rate changes and potential future states. These diagrams are best in order to visualize, quantify, and simulate complex processes.</p>
           <p><strong>What I found:</strong> SO2 has an acidic effect that damages/kills plants; lava flow initially burns and destroys vegetation in its path; vegetation grows back stronger afterward due to nutrients from the lava flow combined with adequate rainfall [2].</p>
-         <img src="C:/Users/chanm/OneDrive - Texas A&M University/images/stockflow.png" width="400">
-         <img src="C:/Users/chanm/OneDrive - Texas A&M University/images/causal loop.png" width="400">
+         <img src="C:/Users/chanm/OneDrive - Texas A&M University/images/stockflow.png" width="600">
+         <img src="C:/Users/chanm/OneDrive - Texas A&M University/images/causal loop.png" width="600">
           <div id="map-kilauea" class="map"></div>
         </div>
       </div>
@@ -79,9 +83,11 @@
         <p>GEOG 361 Lab 2</p>
         <div class="details" id="p3">
           <p><strong>Problem:</strong> Determine which Landsat band combination best reveals vegetation, water, and landscape detail for a study area, and compare pre/post volcanic eruption imagery.</p>
+          <p><strong>Programs Used: </strong>ArcGIS Pro</p>
           <p><strong>What I did:</strong> Analyzed imagery over Cambodia (lat 11.7223, long 105.9925), image ID LC09_L1TP_126052_20241217_20241217_02_T1, acquired 12/17/2024, cloud cover 5.63%, sun elevation 47.78°. Compared True Color (bands 4,3,2), NIR Color (bands 5,4,3), and bands 6,5,2 composites. Also compared eruption imagery from Dec 24 and 26, 2024 using bands 4,3,2 [3].</p>
+          <p><strong>Why I used the tools: </strong>For Landsat imagery, using the 6, 5, 2 (Alternative Composite) was best for a detailed visualization and analysis of the landscape and environmental features. It helped visualize soil moisture, vegetaion, water bodies, and atmospheric conditions. Using this band combination on ArcGIS, it was used to maximize clarity, accuracy, and a meaningful analysis of environmental changes.</p>
           <p><strong>What I found:</strong> The 6,5,2 band combination was best for displaying the landscape because it shows cloud penetration, soil/vegetation moisture, vegetation, deep water, and shorelines clearly, whereas true color made water hard to distinguish [3].</p>
-          <img src="C:/Users/chanm/OneDrive - Texas A&M University/images/Cambodia.png" width="400">
+          <img src="C:/Users/chanm/OneDrive - Texas A&M University/images/Cambodia.png" width="600">
           <div id="map-cambodia" class="map">
         </div>
       </div>
