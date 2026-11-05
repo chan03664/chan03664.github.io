@@ -27,10 +27,15 @@
     padding:18px 20px;display:flex;flex-direction:column;
   }
   .card h2{margin:0 0 12px;color:var(--navy);font-size:22px;text-align:center;}
+  /* Bigger headings on the graph cards */
+  .card.graph h2{font-size:26px;margin-bottom:16px;}
   .sub{text-align:center;font-size:17px;color:var(--navy);}
   .note{font-size:15px;color:#333;line-height:1.5;}
   img.map{width:100%;border:2px solid var(--navy);border-radius:8px;background:#eee;}
+  /* ENLARGED top-row graphs */
+  img.map.big{height:460px;object-fit:contain;padding:8px;}
   .cap{font-size:14px;color:var(--navy);text-align:center;margin:6px 0 0;}
+  .card.graph .cap{font-size:16px;margin-top:8px;}
   table{width:100%;border-collapse:collapse;font-size:15px;}
   th,td{border:1px solid #d7d2c6;padding:6px 8px;text-align:center;}
   th{background:var(--navy);color:#fff;}
@@ -57,28 +62,25 @@
     <h1>ABUJA URBAN GROWTH, 2000–2024</h1>
     <p>Measured physical footprint + growth-type classification (infill · edge expansion · leapfrog)</p>
   </div>
-
   <div class="body-wrap">
-
-    <!-- Row 1: three graphs/maps -->
+    <!-- Row 1: three graphs/maps (ENLARGED) -->
     <div class="row3">
-      <div class="card">
+      <div class="card graph">
         <h2>MAPPED EXTENT BY YEAR</h2>
-        <img class="map" src="assets/images/Abuja_extent_snapshots.png" alt="Extent snapshots">
+        <img class="map big" src="assets/images/Abuja_extent_snapshots.png" alt="Extent snapshots">
         <p class="cap">99.08 → 175.47 → 171.48 → 389.08 km²</p>
       </div>
-      <div class="card">
+      <div class="card graph">
         <h2>AREA & GROWTH RATE</h2>
-        <img class="map" src="assets/images/Abuja_growth_charts.png" alt="Growth charts">
+        <img class="map big" src="assets/images/Abuja_growth_charts.png" alt="Growth charts">
         <p class="cap">Trajectory and annualized growth per interval</p>
       </div>
-      <div class="card">
+      <div class="card graph">
         <h2>DIRECTION OF EXPANSION</h2>
-        <img class="map" src="assets/images/Abuja_directional_expansion.png" alt="Directional expansion">
+        <img class="map big" src="assets/images/Abuja_directional_expansion.png" alt="Directional expansion">
         <p class="cap">Dominant sectors: SW (all 3 intervals), then W, NW, E</p>
       </div>
     </div>
-
     <!-- Row 2: full-width evidence table -->
     <div class="card">
       <h2>THE EVIDENCE, BY INTERVAL</h2>
@@ -90,7 +92,6 @@
       </table>
       <p class="cap">Units: km². Class-3 share = leapfrog signal; beyond 40 km = distant leapfrog.</p>
     </div>
-
     <!-- Row 3: three classification results side by side -->
     <div class="row3">
       <div class="card">
@@ -115,7 +116,6 @@
         First additions beyond 40 km (8.56 km²) → early distant leapfrog.</p>
       </div>
     </div>
-
     <!-- Bottom line (full width) -->
     <div class="bottomline">
       <b>BOTTOM LINE:</b> Abuja's 2000–2024 growth is primarily
@@ -124,7 +124,6 @@
       leapfrog after 2018. Little classic <b>INFILL</b> is evident — most gain is new
       land at the margins, not gap-filling inside the footprint.
     </div>
-
     <!-- Caveats (full width) -->
     <div class="caveats">
       <strong>Caveats (from source documentation):</strong>
@@ -133,11 +132,6 @@
       Directional/radial values are relative to a fixed reference point, not the contemporary edge [1].
       Source: Abuja physical urban footprints (Cailey Purswell, October 2026); Part 2 toolkit v1.0.0, EPSG:32632, 30 m [1].
     </div>
-
-  </div>
-</div>
-</body>
-</html>
   </div>
 </div>
 </body>
