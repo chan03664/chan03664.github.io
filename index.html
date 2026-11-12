@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abuja Urban Growth 2010–2024 — Poster</title>
+<style>
+  :root{
+    --navy:#1f3b57; --orange:#d98b20; --blue:#800000;
+    --purple:#914d89; --grey:#777; --light:#f4f1ea;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:#ccc;font-family:"Segoe UI",Arial,sans-serif;color:#222;}
+  .poster{
+    width:1684px;min-height:1190px;margin:20px auto;background:var(--light);
+    padding:0;box-shadow:0 0 25px rgba(0,0,0,.3);display:flex;flex-direction:column;
+  }
+  .banner{background:var(--navy);color:#fff;padding:26px 34px;}
+  .banner h1{margin:0;font-size:46px;letter-spacing:1px;}
+  .banner p{margin:8px 0 0;font-size:20px;color:#cdd9e4;}
+  .body-wrap{flex:1;display:flex;flex-direction:column;gap:20px;padding:24px 34px;}
+  .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;}
+  .card{
+    background:#fff;border:2px solid var(--navy);border-radius:12px;
+    padding:18px 20px;display:flex;flex-direction:column;
+  }
+  .card h2{margin:0 0 12px;color:var(--navy);font-size:22px;text-align:center;}
+  .card.graph h2{font-size:26px;margin-bottom:16px;}
+  .sub{text-align:center;font-size:17px;color:var(--navy);}
+  .note{font-size:15px;color:#333;line-height:1.5;}
+  img.map{width:100%;border:2px solid var(--navy);border-radius:8px;background:#eee;}
+  img.map.big{height:460px;object-fit:contain;padding:8px;}
+  .cap{font-size:14px;color:var(--navy);text-align:center;margin:6px 0 0;}
+  .card.graph .cap{font-size:16px;margin-top:8px;}
+  .bottomline{
+    background:var(--navy);color:#fff;border-radius:12px;
+    padding:20px 26px;font-size:21px;line-height:1.5;
+  }
+  .bottomline b{color:var(--orange);}
+  .caveats{font-size:24px;color:#555;line-height:1.5;}
+  .leap{color:var(--blue);font-weight:600;}
+  .far{color:var(--purple);font-weight:600;}
+  @media print{
+    body{background:#fff;}
+    .poster{margin:0;box-shadow:none;width:100%;}
+    @page{size:A1 landscape;margin:0;}
+  }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="banner">
+    <h1>ABUJA URBAN GROWTH, 2010–2024</h1>
+    <p>An evidence-based review using mapped classification of infill, edge expansion, and leapfrog patterns</p>
+  </div>
+  <div class="body-wrap">
+    <div class="row3">
+      <div class="card graph">
+        <h2>EDGE EXPANSION (0–20 km)</h2>
+        <img class="map big" src="assets/images/abujaedge.png" alt="Edge Expansion chart">
+        <p class="cap">Gross added area: built-up growth within 0–20 km bands from the city reference point.</p>
+        <p class="note">
+          The edge expansion plot visualizes the evolution of Abuja’s urban boundary from 2010 to 2024. Expansion accelerated especially in the 10–20 km band, doubling in area by 2024 compared to a decade earlier. Population increases, availability of undeveloped land, and suburbanization all contributed, as new neighborhoods emerged on existing urban edges. This pattern typifies outward city growth, often in response to both demand and affordability, but stresses infrastructure and transit provision at the fringes. Notably, both the 0–10 km and 10–20 km categories rose, a signal of continuous peri-urban transition.
+        </p>
+      </div>
+      <div class="card graph">
+        <h2>INFILL DEVELOPMENT</h2>
+        <img class="map big" src="assets/images/abujainfill.png" alt="Infill Growth chart">
+        <p class="cap">Infill: Developed area within prior built-up footprint.</p>
+        <p class="note">
+          Infill, or internal development, is the conversion of vacant parcels and gaps in the established city. From 2010 to 2024, Abuja’s infill area grew dramatically, spiking after 2018. Infill first grew slowly, but housing pressure, policy push for densification, and need for service efficiency caused a later surge. This method maximizes infrastructure use and curbs urban sprawl, though constrained by land use regulations and socio-economic realities. Much of Abuja’s post-2018 growth reflects a decisive strategy shift to utilize underused urban land, reducing pressure on outer greenfields.
+        </p>
+      </div>
+      <div class="card graph">
+        <h2>LEAPFROG GROWTH (20+ km)</h2>
+        <img class="map big" src="assets/images/abujaleap.png" alt="Leapfrog Growth chart">
+        <p class="cap">Leapfrog: Urban land added at 20+ km from central reference point.</p>
+        <p class="note">
+          Leapfrog growth occurs when isolated urban patches arise far from the main city cluster. Abuja’s leapfrog development remained modest until 2018, after which outlying new clusters rapidly increased — especially in the 20–40 km zone. These arise due to land speculation, affordability, and opportunity outside controlled zones. While providing housing, leapfrog growth challenges planners, resulting in fragmented infrastructure, longer commutes and increased ecosystem impacts. By 2024, this process became a marked feature of the capital’s rapidly maturing urban landscape.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <h2>SPATIAL DISTRIBUTION OF BUILT-UP AREA</h2>
+      <img class="map" style="height:360px;object-fit:contain;padding:8px;" src="assets/images/abujagrowth.png" alt="Abuja built-up growth map">
+      <p class="cap">Map legend: Red = 2010 core, yellow = expansion/infill, cyan = newest/distant areas (2024).</p>
+      <p class="note">
+        This cumulative spatial map shows the multi-directional spread of Abuja’s built-up area. The dense red core is surrounded by significant intermediate (yellow) zones, with a halo of new (cyan) urban areas at the fringes and gaps. Major growth traces the west and northwest sectors, but expansions encircle the core, indicating both managed and outlying settlements. The pattern is both concentric and fragmented, underpinning the complex dynamics facing Abuja moving forward.
+      </p>
+    </div>
+    <div class="bottomline">
+      <b>SUMMARY:</b> Abuja’s urban area doubled in just fourteen years. The city now faces the challenges of integrating diverse growth types, coordinating development, and providing sustainable infrastructure for fast-changing, increasingly expansive communities.
+    </div>
+    <div class="caveats">
+      <strong>Note:</strong> Classifications are based on mapped built-up area from remote sensing and GIS analysis (2010, 2018, 2024). All area values are in square kilometers. Visualizations created April 2024.
+    </div>
+  </div>
+</div>
+</body>
+</html>
